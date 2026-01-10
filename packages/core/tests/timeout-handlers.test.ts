@@ -186,9 +186,8 @@ describe("ActHandler two-step timeout", () => {
       combinedUrlMap: {},
     });
 
-    const { performUnderstudyMethod } = await import(
-      "../lib/v3/handlers/handlerUtils/actHandlerUtils"
-    );
+    const { performUnderstudyMethod } =
+      await import("../lib/v3/handlers/handlerUtils/actHandlerUtils");
     const performUnderstudyMethodMock = vi.mocked(performUnderstudyMethod);
     performUnderstudyMethodMock.mockResolvedValue(undefined);
 
@@ -266,9 +265,8 @@ describe("ActHandler self-heal timeout", () => {
       combinedUrlMap: {},
     });
 
-    const { performUnderstudyMethod } = await import(
-      "../lib/v3/handlers/handlerUtils/actHandlerUtils"
-    );
+    const { performUnderstudyMethod } =
+      await import("../lib/v3/handlers/handlerUtils/actHandlerUtils");
     const performUnderstudyMethodMock = vi.mocked(performUnderstudyMethod);
     // First call fails, triggering self-heal
     performUnderstudyMethodMock.mockRejectedValueOnce(
@@ -337,9 +335,8 @@ describe("ActHandler self-heal timeout", () => {
       combinedUrlMap: {},
     });
 
-    const { performUnderstudyMethod } = await import(
-      "../lib/v3/handlers/handlerUtils/actHandlerUtils"
-    );
+    const { performUnderstudyMethod } =
+      await import("../lib/v3/handlers/handlerUtils/actHandlerUtils");
     const performUnderstudyMethodMock = vi.mocked(performUnderstudyMethod);
     // First call fails, triggering self-heal
     performUnderstudyMethodMock.mockRejectedValueOnce(
@@ -738,9 +735,8 @@ describe("No-timeout success paths", () => {
       combinedUrlMap: {},
     });
 
-    const { performUnderstudyMethod } = await import(
-      "../lib/v3/handlers/handlerUtils/actHandlerUtils"
-    );
+    const { performUnderstudyMethod } =
+      await import("../lib/v3/handlers/handlerUtils/actHandlerUtils");
     const performUnderstudyMethodMock = vi.mocked(performUnderstudyMethod);
     performUnderstudyMethodMock.mockResolvedValue(undefined);
 
@@ -908,9 +904,8 @@ describe("No-timeout success paths", () => {
       combinedUrlMap: {},
     });
 
-    const { performUnderstudyMethod } = await import(
-      "../lib/v3/handlers/handlerUtils/actHandlerUtils"
-    );
+    const { performUnderstudyMethod } =
+      await import("../lib/v3/handlers/handlerUtils/actHandlerUtils");
     const performUnderstudyMethodMock = vi.mocked(performUnderstudyMethod);
     performUnderstudyMethodMock.mockResolvedValue(undefined);
 
@@ -965,9 +960,8 @@ describe("No-timeout success paths", () => {
       combinedUrlMap: {},
     });
 
-    const { performUnderstudyMethod } = await import(
-      "../lib/v3/handlers/handlerUtils/actHandlerUtils"
-    );
+    const { performUnderstudyMethod } =
+      await import("../lib/v3/handlers/handlerUtils/actHandlerUtils");
     const performUnderstudyMethodMock = vi.mocked(performUnderstudyMethod);
     performUnderstudyMethodMock.mockResolvedValue(undefined);
 

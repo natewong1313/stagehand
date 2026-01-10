@@ -15,7 +15,7 @@ This guide walks you through integrating Stagehand with LangChain JS to build po
 Install the required packages for LangChain JS and Stagehand integration:
 
 ```bash
-npm install @langchain/langgraph @langchain/community @langchain/core @browserbasehq/stagehand
+npm install @langchain/langgraph @langchain/community @langchain/core @natewong1313/stagehand
 ```
 
 ## Step 2: Configure Environment Variables
@@ -32,7 +32,7 @@ BROWSERBASE_PROJECT_ID="your-browserbase-project-id"
 Initialize Stagehand with your preferred configuration:
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 // For local development
 const stagehand = new Stagehand({

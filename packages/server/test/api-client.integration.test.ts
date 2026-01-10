@@ -12,7 +12,7 @@
  *   STAGEHAND_API_URL=http://localhost:3000 pnpm run test:integration
  */
 import { describe, expect, test, beforeAll, afterAll } from "vitest";
-import { Api } from "@browserbasehq/stagehand";
+import { Api } from "@natewong1313/stagehand";
 import dotenv from "dotenv";
 import path from "path";
 

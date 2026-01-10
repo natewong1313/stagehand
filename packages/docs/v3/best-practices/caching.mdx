@@ -22,7 +22,7 @@ When you specify a `cacheDir`:
 Cache actions from `act()` by specifying a cache directory in your Stagehand constructor.
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -51,7 +51,7 @@ await stagehand.act("fill the username field with %username%", {
 Cache agent actions (including Computer Use Agent actions) the same way - just specify a `cacheDir`. The cache key is automatically generated based on the instruction, start URL, agent execution options, and agent configuration - subsequent runs with the same parameters will reuse cached actions.
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",

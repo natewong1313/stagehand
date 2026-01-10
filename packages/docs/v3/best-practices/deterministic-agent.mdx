@@ -47,7 +47,7 @@ The cache key is automatically generated based on:
 Simply add `cacheDir` when initializing Stagehand:
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 // Enable auto-caching
 const stagehand = new Stagehand({
@@ -113,7 +113,7 @@ const extractStagehand = new Stagehand({
 ### First Run (Exploration Mode)
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -160,7 +160,7 @@ await stagehand.close();
 Run the **exact same script** again:
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -207,7 +207,7 @@ await stagehand.close();
 While caching handles execution automatically, you can still use `stagehand.history` to analyze what happened:
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 import fs from "fs/promises";
 
 const stagehand = new Stagehand({

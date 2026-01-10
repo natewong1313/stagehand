@@ -19,7 +19,7 @@ import { V3Banner } from '/snippets/v3-banner.mdx';
 The `Stagehand` class is the main entry point for Stagehand v3. It manages browser lifecycle, provides AI-powered automation methods, and handles both local and remote browser environments.
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand(options);
 await stagehand.init();
@@ -419,7 +419,7 @@ const debugUrl = stagehand.browserbaseDebugURL;
 <Tab title="Browserbase">
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 // Remote browser on Browserbase
 const stagehand = new Stagehand({
@@ -444,7 +444,7 @@ await stagehand.close();
 <Tab title="Local">
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 // Local browser
 const stagehand = new Stagehand({
@@ -467,7 +467,7 @@ await stagehand.close();
 <Tab title="Custom Model Config">
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "LOCAL",
@@ -488,7 +488,7 @@ await stagehand.init();
 <Tab title="Multi-Page">
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({ env: "LOCAL" });
 await stagehand.init();
@@ -514,7 +514,7 @@ await stagehand.close();
 <Tab title="With Metrics">
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "LOCAL",
@@ -543,7 +543,7 @@ await stagehand.close();
 <Tab title="With Custom Logger">
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "LOCAL",

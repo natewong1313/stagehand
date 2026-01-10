@@ -152,7 +152,7 @@ const { someValue } = await page.extract({
 ## Initialize
 
 ```typescript
-import { Stagehand, Page, BrowserContext } from "@browserbasehq/stagehand";
+import { Stagehand, Page, BrowserContext } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE"
@@ -337,7 +337,7 @@ await agent.execute("Do some stuff on this page");
 - Store configurations in `stagehand.config.ts`
 - Use environment variables for API keys (see `.env.example`)
 - Implement main automation logic in functions that accept `{ page, context, stagehand }`
-- Use TypeScript with proper imports from `@browserbasehq/stagehand`
+- Use TypeScript with proper imports from `@natewong1313/stagehand`
 ``````
 
 </Accordion>

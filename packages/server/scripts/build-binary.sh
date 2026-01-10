@@ -14,7 +14,7 @@ PKG_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
 REPO_DIR="$(cd "${PKG_DIR}/../.." && pwd)"
 
 cd "${REPO_DIR}"
-pnpm --filter @browserbasehq/stagehand build
+pnpm --filter @natewong1313/stagehand build
 
 cd "${PKG_DIR}"
 mkdir -p dist/sea

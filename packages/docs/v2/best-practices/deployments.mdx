@@ -53,7 +53,7 @@ touch api/run.ts package.json vercel.json tsconfig.json
 ```typescript
 // api/run.ts
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 import { z } from "zod/v3";
 
 export default async function handler(req: VercelRequest, res: VercelResponse): Promise<void> {
@@ -105,7 +105,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse): 
     "type": "module",
     "engines": { "node": ">=18" },
     "dependencies": {
-      "@browserbasehq/stagehand": "^2.4.3",
+      "@natewong1313/stagehand": "^2.4.3",
       "zod": "^3.25.0"
     },
     "devDependencies": {

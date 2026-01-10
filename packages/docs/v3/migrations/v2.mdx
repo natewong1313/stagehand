@@ -22,7 +22,7 @@ import { V3Banner } from '/snippets/v3-banner.mdx';
 Update your `package.json` to use Stagehand v3:
 
 ```bash Bash
-npm install @browserbasehq/stagehand@latest
+npm install @natewong1313/stagehand@latest
 ```
 
 ## Overview of Major Changes
@@ -49,7 +49,7 @@ Stagehand v3 introduces significant improvements to the API design and functiona
 The `modelName` and `modelClientOptions` parameters have been unified into a single `model` parameter.
 
 ```typescript Stagehand v2 icon="/images/typescript.svg"
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -64,7 +64,7 @@ const stagehand = new Stagehand({
 ```
 
 ```typescript Stagehand v3 icon="/images/typescript.svg"
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 // Option 1: String format (recommended for simplicity, auto-loads model API key from env)
 const stagehand = new Stagehand({
@@ -732,7 +732,7 @@ Here's a complete example showing a full migration:
 <Tab title="Stagehand v2">
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 import { z } from 'zod/v3';
 
 // Initialize
@@ -789,7 +789,7 @@ await stagehand.close();
 <Tab title="Stagehand v3">
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 import { z } from 'zod/v3';
 
 // Initialize - simplified configuration

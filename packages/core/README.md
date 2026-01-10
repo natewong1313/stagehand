@@ -131,7 +131,7 @@ You can install and build Stagehand directly from a github branch using [gitpkg]
 In your project's `package.json` set:
 
 ```json
-"@browserbasehq/stagehand": "https://gitpkg.now.sh/browserbase/stagehand/packages/core?<branchName>",
+"@natewong1313/stagehand": "https://gitpkg.now.sh/browserbase/stagehand/packages/core?<branchName>",
 ```
 
 ## Contributing

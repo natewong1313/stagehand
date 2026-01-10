@@ -125,7 +125,7 @@ await stagehand.act("choose 'Peach' from the favorite color dropdown", {
 You can use `act()` with pages from other browser automation libraries like Puppeteer, Playwright, or Patchright by passing the `page` option:
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 import puppeteer from "puppeteer-core";
 
 const stagehand = new Stagehand({
@@ -187,7 +187,7 @@ if (action) {
 Enable automatic action caching by specifying a `cacheDir` when initializing Stagehand. The first time an action runs, it's cached. Subsequent runs reuse the cached action without LLM calls.
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 // Enable caching by specifying a cache directory
 const stagehand = new Stagehand({

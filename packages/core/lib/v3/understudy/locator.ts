@@ -645,7 +645,9 @@ export class Locator {
           if (page) {
             await page.stealthTypeValue(valueToType, session);
           } else {
-            await session.send<never>("Input.insertText", { text: valueToType });
+            await session.send<never>("Input.insertText", {
+              text: valueToType,
+            });
           }
         }
 

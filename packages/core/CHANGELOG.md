@@ -1,4 +1,4 @@
-# @browserbasehq/stagehand
+# @natewong1313/stagehand
 
 ## 3.0.8
 

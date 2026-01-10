@@ -20,7 +20,7 @@ Stagehand v3 can work alongside Selenium WebDriver, allowing both tools to opera
 Install Stagehand, Selenium, and the Browserbase SDK:
 
 ```bash
-npm install @browserbasehq/stagehand selenium-webdriver @browserbasehq/sdk
+npm install @natewong1313/stagehand selenium-webdriver @browserbasehq/sdk
 ```
 
 ## Quickstart
@@ -33,7 +33,7 @@ Use the Browserbase SDK to create a session that both tools can connect to:
 import http from "http";
 import { Builder, Key } from "selenium-webdriver";
 import Browserbase from "@browserbasehq/sdk";
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const bb = new Browserbase({
   apiKey: process.env.BROWSERBASE_API_KEY,

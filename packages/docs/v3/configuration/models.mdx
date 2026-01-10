@@ -25,7 +25,7 @@ Get started with Google Gemini (recommended for speed and cost):
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -49,7 +49,7 @@ Use any model from the following supported providers.
 <Tab title="Google">
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -68,7 +68,7 @@ await stagehand.init();
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -88,7 +88,7 @@ await stagehand.init();
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -106,7 +106,7 @@ await stagehand.init();
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -124,7 +124,7 @@ await stagehand.init();
 <Tab title="Cerebras">
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -143,7 +143,7 @@ await stagehand.init();
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -163,7 +163,7 @@ await stagehand.init();
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -182,7 +182,7 @@ await stagehand.init();
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -202,7 +202,7 @@ await stagehand.init();
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -220,7 +220,7 @@ await stagehand.init();
 <Tab title="Perplexity">
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -237,7 +237,7 @@ await stagehand.init();
 <Tab title="TogetherAI">
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -256,7 +256,7 @@ await stagehand.init();
 
 <CodeGroup>
 ```typescript TypeScript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -319,7 +319,7 @@ bun add @ai-sdk/amazon-bedrock
 <Step title="Import, create provider, and create client">
 ```typescript
 import { createAmazonBedrock } from '@ai-sdk/amazon-bedrock';
-import { AISdkClient } from '@browserbasehq/stagehand';
+import { AISdkClient } from '@natewong1313/stagehand';
 
 const bedrockProvider = createAmazonBedrock({
   region: 'us-east-1',
@@ -381,7 +381,7 @@ bun add @ai-sdk/google
 <Step title="Import, create provider, and create client">
 ```typescript
 import { createGoogle } from '@ai-sdk/google';
-import { AISdkClient } from '@browserbasehq/stagehand';
+import { AISdkClient } from '@natewong1313/stagehand';
 
 const googleProvider = createGoogle({
   apiKey: process.env.GEMINI_API_KEY,
@@ -418,7 +418,7 @@ Install the Vercel AI SDK for your provider.
 <Step title="Import, create provider, and create client">
 ```typescript
 import { createProvider } from '@ai-sdk/provider';
-import { AISdkClient } from '@browserbasehq/stagehand';
+import { AISdkClient } from '@natewong1313/stagehand';
 
 const provider = createProvider({
   apiKey: 'xxxxxxxxx',
@@ -603,7 +603,7 @@ For all other providers, use `llmClient`. Here's an example with Hugging Face:
 // pnpm add @ai-sdk/huggingface
 
 import { createHuggingFace } from "@ai-sdk/huggingface";
-import { AISdkClient } from "@browserbasehq/stagehand";
+import { AISdkClient } from "@natewong1313/stagehand";
 
 const huggingFaceProvider = createHuggingFace({
   apiKey: process.env.HUGGINGFACE_API_KEY,
@@ -630,7 +630,7 @@ const stagehand = new Stagehand({
 For advanced use cases like custom retries or caching logic, you can extend the `AISdkClient`:
 
 ```typescript
-import { LLMClient } from "@browserbasehq/stagehand";
+import { LLMClient } from "@natewong1313/stagehand";
 
 class CustomRetryClient extends LLMClient {
   async createChatCompletion(options) {

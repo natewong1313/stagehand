@@ -185,30 +185,29 @@ const cases: Case[] = [
   },
 ];
 
-test.describe
-  .parallel("Stagehand v3: shadow <-> iframe scenarios", () => {
-    let v3: V3;
+test.describe.parallel("Stagehand v3: shadow <-> iframe scenarios", () => {
+  let v3: V3;
 
-    test.beforeEach(async () => {
-      v3 = new V3(v3DynamicTestConfig);
-      await v3.init();
-    });
-
-    test.afterEach(async () => {
-      await v3?.close?.().catch(() => {});
-    });
-
-    const frameworks: Framework[] = [
-      "v3",
-      "playwright",
-      "puppeteer",
-      "patchright",
-    ];
-    for (const fw of frameworks) {
-      for (const c of cases) {
-        test(`[${fw}] ${c.title}`, async () => {
-          await runCase(v3, c, fw);
-        });
-      }
-    }
+  test.beforeEach(async () => {
+    v3 = new V3(v3DynamicTestConfig);
+    await v3.init();
   });
+
+  test.afterEach(async () => {
+    await v3?.close?.().catch(() => {});
+  });
+
+  const frameworks: Framework[] = [
+    "v3",
+    "playwright",
+    "puppeteer",
+    "patchright",
+  ];
+  for (const fw of frameworks) {
+    for (const c of cases) {
+      test(`[${fw}] ${c.title}`, async () => {
+        await runCase(v3, c, fw);
+      });
+    }
+  }
+});

@@ -2,7 +2,7 @@
 
 This is a project that uses Stagehand V3, a browser automation framework with AI-powered `act`, `extract`, `observe`, and `agent` methods.
 
-The main class can be imported as `Stagehand` from `@browserbasehq/stagehand`.
+The main class can be imported as `Stagehand` from `@natewong1313/stagehand`.
 
 **Key Classes:**
 
@@ -13,7 +13,7 @@ The main class can be imported as `Stagehand` from `@browserbasehq/stagehand`.
 ## Initialize
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "LOCAL", // or "BROWSERBASE"

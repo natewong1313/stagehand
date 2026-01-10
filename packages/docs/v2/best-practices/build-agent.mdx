@@ -111,7 +111,7 @@ Let's use the `replay` function below to save the actions to a Stagehand script 
 
 <Accordion title="utils.ts">
 ```typescript
-import { AgentAction, AgentResult } from "@browserbasehq/stagehand";
+import { AgentAction, AgentResult } from "@natewong1313/stagehand";
 import { exec } from "child_process";
 import fs from "fs/promises";
 
@@ -149,7 +149,7 @@ export async function replay(result: AgentResult) {
 
   console.log("Replay:");
   const boilerplate = `
-import { Page, BrowserContext, Stagehand } from "@browserbasehq/stagehand";
+import { Page, BrowserContext, Stagehand } from "@natewong1313/stagehand";
 
 export async function main(stagehand: Stagehand) {
     const page = stagehand.page
@@ -179,7 +179,7 @@ export async function main(stagehand: Stagehand) {
 Here's the replay output of an instruction like `"Get me the stock price of NVDA"`:
 
 ```typescript {14-22} replay.ts
-import { Page, BrowserContext, Stagehand } from "@browserbasehq/stagehand";
+import { Page, BrowserContext, Stagehand } from "@natewong1313/stagehand";
 
 export async function main({
   page,

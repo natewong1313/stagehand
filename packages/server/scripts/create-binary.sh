@@ -74,7 +74,7 @@ fi
 OUT_PATH="${DIST_DIR}/${BINARY_NAME}"
 
 if [ ! -f "${BLOB_PATH}" ]; then
-  echo "Missing ${BLOB_PATH}. Run 'pnpm --filter @browserbasehq/stagehand-server build:binary' first." >&2
+  echo "Missing ${BLOB_PATH}. Run 'pnpm --filter @natewong1313/stagehand-server build:binary' first." >&2
   exit 1
 fi
 

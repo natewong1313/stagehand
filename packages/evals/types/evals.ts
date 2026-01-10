@@ -49,12 +49,11 @@ export interface EvalInput {
   params?: Record<string, unknown>;
 }
 
-export interface Testcase
-  extends EvalCase<
-    EvalInput,
-    unknown,
-    { model: AvailableModel; test: string; categories?: string[] }
-  > {
+export interface Testcase extends EvalCase<
+  EvalInput,
+  unknown,
+  { model: AvailableModel; test: string; categories?: string[] }
+> {
   input: EvalInput;
   name: string;
   tags: string[];

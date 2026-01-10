@@ -43,7 +43,7 @@ Get your API key and Project ID from the [Browserbase Dashboard](https://browser
 The simplest way to get started is with default settings:
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -56,7 +56,7 @@ await stagehand.init();
 
 Configure browser settings, proxy support, and other session parameters:
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -130,7 +130,7 @@ const session = await bb.sessions.create({
 Connect to a previously created Browserbase session using its session ID:
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "BROWSERBASE",
@@ -162,7 +162,7 @@ The local environment runs browsers directly on your machine, providing full con
 ### Basic Local Setup
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "LOCAL"
@@ -177,7 +177,7 @@ console.log("Session ID:", stagehand.sessionId);
 Customize browser launch options for local development:
 
 ```typescript
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 
 const stagehand = new Stagehand({
   env: "LOCAL",

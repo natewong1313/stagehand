@@ -44,19 +44,19 @@ If you'd like to add Stagehand to an existing Next.js project, you can do so by 
 <Tabs>
 	<Tab title="npm">
 	```bash
-	npm install @browserbasehq/stagehand @browserbasehq/sdk playwright zod
+	npm install @natewong1313/stagehand @browserbasehq/sdk playwright zod
 	```
 	</Tab>
 
 	<Tab title="pnpm">
 	```bash
-	pnpm add @browserbasehq/stagehand @browserbasehq/sdk playwright zod
+	pnpm add @natewong1313/stagehand @browserbasehq/sdk playwright zod
 	```
 	</Tab>
 
 	<Tab title="yarn">
 	```bash
-	yarn add @browserbasehq/stagehand @browserbasehq/sdk playwright zod
+	yarn add @natewong1313/stagehand @browserbasehq/sdk playwright zod
 	```
 	</Tab>
 </Tabs>
@@ -82,7 +82,7 @@ Next, let's define our `main` function as a server action in `app/stagehand/main
 
 "use server";
 
-import { Stagehand } from "@browserbasehq/stagehand";
+import { Stagehand } from "@natewong1313/stagehand";
 import { z } from "zod/v3";
 import { Browserbase } from "@browserbasehq/sdk";
 

@@ -1,4 +1,4 @@
-# @browserbasehq/stagehand-lib
+# @natewong1313/stagehand-lib
 
 ## 2.4.1
 
