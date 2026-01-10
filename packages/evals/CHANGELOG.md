@@ -1,5 +1,12 @@
 # @natewong1313/stagehand-evals
 
+## 1.1.8
+
+### Patch Changes
+
+- Updated dependencies [5138c03]
+  - @natewong1313/stagehand@4.0.0
+
 ## 1.1.7
 
 ### Patch Changes

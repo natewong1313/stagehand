@@ -1,5 +1,12 @@
 # @natewong1313/stagehand-server
 
+## 3.3.1
+
+### Patch Changes
+
+- Updated dependencies [5138c03]
+  - @natewong1313/stagehand@4.0.0
+
 ## 3.2.1
 
 ### Patch Changes

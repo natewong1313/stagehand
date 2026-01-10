@@ -1,5 +1,11 @@
 # @natewong1313/stagehand
 
+## 4.0.0
+
+### Major Changes
+
+- 5138c03: stealthy methods added
+
 ## 3.0.8
 
 ### Patch Changes
